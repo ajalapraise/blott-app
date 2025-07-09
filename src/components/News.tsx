@@ -15,7 +15,7 @@ const News = () => {
   };
 
   return (
-    <div className="w-full h-full flex flex-col items-start justify-center ">
+    <div className="w-full h-full flex flex-col items-start justify-center p-4">
       <h1 className="font-medium text-2xl md:text-4xl uppercase text-white ">
         news
       </h1>
@@ -27,7 +27,7 @@ const News = () => {
               href={item.url}
               target="_blank"
               key={index}
-              className="bg-none  md:p-4 rounded-lg mb-4 hover:bg-[#2A283E] transition-colors w-full md:w-[317px]  h-fit gap-2 flex md:flex-col  items-start justify-center space-y-2 md:space-y-0 "
+              className="bg-none  md:p-4 rounded-lg mb-4 hover:bg-[#2A283E] transition-all ease-in-out w-full md:w-[317px]  h-fit gap-2 flex md:flex-col  items-start justify-center space-y-2 md:space-y-0 "
             >
               <div className="w-25 h-25 md:w-[285px] md:h-[179px]">
                 <Image
@@ -36,7 +36,7 @@ const News = () => {
                   width={285}
                   height={179}
                   sizes="(max-width: 768px) 100px, 285px"
-                  className="w-25 h-25 md:w-[285px] md:h-[179px] flex justify-center object-center object-cover"
+                  className="w-full h-full flex justify-center object-center object-cover"
                 />
               </div>
               <div className="flex flex-col items-start justify-between w-full gap-2">

@@ -65,7 +65,7 @@ export default function Home() {
       </Head>
 
       <div
-        className={`${rubik.className} w-full font-[family-name:var(--font-geist-sans)] p-4 md:py-6 md:px-10 space-y-3`}
+        className={`${rubik.className} w-full font-[family-name:var(--font-geist-sans)] md:py-6 md:px-10 space-y-3`}
       >
         <Header />
         <News />

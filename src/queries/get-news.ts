@@ -1,7 +1,6 @@
 import { API_URL } from '../utils/endpoints';
 
 export const getAllNews = async () => {
-    console.log(process.env.NEXT_PUBLIC_API_KEY, 'key');
     const url = `${API_URL}?category=general&token=${process.env.NEXT_PUBLIC_API_KEY}`;
     try {
         const response = await fetch(url, {
